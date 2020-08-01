@@ -34,7 +34,7 @@ namespace ConsoleApp
 
             _reminder.AddTask("night", "Good Night Babe!", 24, TaskType.Repetitive, nightDate);
 
-            _reminder.AddTask("water", "Hey babe, It is time to drink water!", 3, TaskType.Repetitive);
+            _reminder.AddTask("water", "Hey babe, It is time to drink water!", 2, TaskType.Repetitive);
 
             Console.WriteLine("Daily reminder has started!");
             _reminder.Start();

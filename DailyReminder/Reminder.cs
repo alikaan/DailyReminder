@@ -37,9 +37,18 @@ namespace DailyReminder
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
+            var startMessage = new StringBuilder();
+            startMessage.AppendLine("Welcome to daily reminder service by Ali Kaan Türkmen.");
+            startMessage.Append("Tasks:");
+            foreach(var task in _timedTasks)
+            {
+                startMessage.AppendLine(task.GetName() + ",");
+            }
+            Console.WriteLine(startMessage.ToString());
+            SendMessage(startMessage.ToString());
             while(true)
             {
-                while (sw.Elapsed > TimeSpan.FromSeconds(10))
+                while (sw.Elapsed > TimeSpan.FromMinutes(10))
                 {
                     Console.WriteLine("Checking tasks...");
                     Console.WriteLine("Current time is : " + LocalTime.Get());
@@ -77,6 +86,10 @@ namespace DailyReminder
         private bool SendTaskMessage(TimedTask task)
         {
             return _smsService.SendSMS(_phoneNumber, "dailyReminder", task.GetMessage());
+        }
+        private bool SendMessage(string message)
+        {
+            return _smsService.SendSMS(_phoneNumber, "dailyReminder", message);
         }
     }
 }
