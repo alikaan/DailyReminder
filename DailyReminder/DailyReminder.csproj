@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocalTime.cs" />
     <Compile Include="Reminder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimedTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NotificationService\NotificationService.csproj">
