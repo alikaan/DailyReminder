@@ -9,9 +9,21 @@ namespace ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            DailyReminder.Reminder _reminder = new DailyReminder.Reminder("05542985313");
+            string _phoneNo;
+            if (args.Length == 1 && args[0].Length == 11)
+            {
+                _phoneNo = args[0];
+            }
+            else
+            {
+                Console.WriteLine("Phone number is wrong! Please Try Again. ( 05xx xxx xx xx )");
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadLine();
+                return 0;
+            }
+            DailyReminder.Reminder _reminder = new DailyReminder.Reminder(_phoneNo);
             Console.WriteLine("Current time is : " + LocalTime.Get());
 
             var dateNow = DateTime.Now;
@@ -28,7 +40,7 @@ namespace ConsoleApp
             _reminder.Start();
 
             Console.ReadLine();
-
+            return 0;
         }
     }
 }
