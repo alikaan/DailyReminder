@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyReminder", "DailyReminder\DailyReminder.csproj", "{A7515992-DC1A-4977-9BA1-659F055C0B83}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{AE0EB3FB-099A-4F42-A896-8A6BD2490944}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyReminder", "DailyReminder\DailyReminder.csproj", "{83E5BCD4-BEB5-47A2-A678-0942B9C3AB5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{32338A93-6550-41C9-A038-89ED6EAEA16D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7515992-DC1A-4977-9BA1-659F055C0B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7515992-DC1A-4977-9BA1-659F055C0B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7515992-DC1A-4977-9BA1-659F055C0B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7515992-DC1A-4977-9BA1-659F055C0B83}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE0EB3FB-099A-4F42-A896-8A6BD2490944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE0EB3FB-099A-4F42-A896-8A6BD2490944}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE0EB3FB-099A-4F42-A896-8A6BD2490944}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE0EB3FB-099A-4F42-A896-8A6BD2490944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E5BCD4-BEB5-47A2-A678-0942B9C3AB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E5BCD4-BEB5-47A2-A678-0942B9C3AB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E5BCD4-BEB5-47A2-A678-0942B9C3AB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E5BCD4-BEB5-47A2-A678-0942B9C3AB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32338A93-6550-41C9-A038-89ED6EAEA16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32338A93-6550-41C9-A038-89ED6EAEA16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32338A93-6550-41C9-A038-89ED6EAEA16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32338A93-6550-41C9-A038-89ED6EAEA16D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

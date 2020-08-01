@@ -1,12 +1,7 @@
-﻿using Amazon.CodePipeline.Model;
-using Amazon.Runtime;
+﻿using Amazon.Runtime;
 using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NotificationService
 {
@@ -14,8 +9,8 @@ namespace NotificationService
     {
         private const string KeyID = "AKIAR52JXGF3VVLR2JCC";
         private const string KeyAccess = "h897wlJtAOij8L2HbuVwVhrCXXuvGBvSvU8Udrpy";
-        public string PhoneNumber { get; set; }
-        public string Topic { get; set; }
+        private string PhoneNumber { get; set; }
+        private string Topic { get; set; }
         private List<string> TopicList { get; set; }
 
         private List<string> ListTopics(AmazonSimpleNotificationServiceClient snsClient)
