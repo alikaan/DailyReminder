@@ -42,7 +42,7 @@ namespace DailyReminder
             startMessage.Append("Tasks:");
             foreach(var task in _timedTasks)
             {
-                startMessage.Append(task.GetName() + ",");
+                startMessage.Append(task.GetName() + " ");
             }
             startMessage.AppendLine();
             Console.WriteLine(startMessage.ToString());
